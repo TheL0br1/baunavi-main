@@ -11,21 +11,20 @@
 #include "espWrapper.hpp"
 
 // Callback when data is sent
-vvoid OnDataRecv(uint8_t *mac_addr, uint8_t *incomingData, uint8_t len) {
+void OnDataRecv(int *mac_addr, int*incomingData, int len) {
+    espWrapper *pEspWrapper = espWrapper::getInstance();
     Serial.print(len);
     Serial.print(" bytes of data received from : ");
-    printMAC(mac_addr);
+    pEspWrapper->printMAC(mac_addr);
+
     Serial.println();
     uint8_t type = incomingData[0];  // first message byte is the type of message
     switch (type) {
         case DATA:  // the message is data type
-            memcpy(&incomingReadings, incomingData, sizeof(incomingReadings));
+            myData data = myData(0, 0);
+            memcpy(&data, incomingData, sizeof(myData));
             Serial.print("Charge_v: ");
-            Serial.println(incomingReadings.charge);
-            if(findClient(mac_addr) != -1){
-                Serial.println("setted charge");
-                clients[findClient(mac_addr)].charge = (float)incomingReadings.charge;
-            }
+            Serial.println(data.charge);
             Serial.println();
             break;
 
@@ -65,7 +64,7 @@ vvoid OnDataRecv(uint8_t *mac_addr, uint8_t *incomingData, uint8_t len) {
             break;
     }
 }
-void OnDataSent(uint8_t *mac_addr, uint8_t sendStatus) {
+void OnDataSent(int *mac_addr, int sendStatus) {
     Serial.print("Last Packet Send Status: ");
     if (sendStatus == ESP_OK) {
         Serial.println("Delivery Success to ");

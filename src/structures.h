@@ -81,9 +81,19 @@ struct myData{
     myData(uint32_t serialId, double charge): type(DATA), serialId(serialId), role(BASE), charge(charge){
 
     }
+    void print(){
+        Serial.print("MessageType: ");
+        Serial.println(type);
+        Serial.print("Role: ");
+        Serial.println(role);
+        Serial.print("Serial id ");
+        Serial.println(serialId);
+        Serial.print("Charge: ");
+        Serial.println(charge);
+    }
 };
 struct EspData{
-    EspRole role;
+    EspRole role
     uint32_t serialId;
     double charge;
     char WifiName[99];
