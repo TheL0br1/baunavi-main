@@ -11,67 +11,72 @@
 #include "espWrapper.hpp"
 
 // Callback when data is sent
-void OnDataSent(int *macAddr, int sendStatus) {
-    espWrapper *pEspWrapper = espWrapper::getInstance();
+vvoid OnDataRecv(uint8_t *mac_addr, uint8_t *incomingData, uint8_t len) {
+    Serial.print(len);
+    Serial.print(" bytes of data received from : ");
+    printMAC(mac_addr);
+    Serial.println();
+    uint8_t type = incomingData[0];  // first message byte is the type of message
+    switch (type) {
+        case DATA:  // the message is data type
+            memcpy(&incomingReadings, incomingData, sizeof(incomingReadings));
+            Serial.print("Charge_v: ");
+            Serial.println(incomingReadings.charge);
+            if(findClient(mac_addr) != -1){
+                Serial.println("setted charge");
+                clients[findClient(mac_addr)].charge = (float)incomingReadings.charge;
+            }
+            Serial.println();
+            break;
 
+
+        case PAIRING:  // the message is a pairing request
+            memcpy(&pairingData, incomingData, sizeof(pairingData));
+            Serial.println(pairingData.msgType);
+            Serial.println(pairingData.id);
+            Serial.print("Pairing request from: ");
+            printMAC(mac_addr);
+            Serial.println();
+            Serial.println(pairingData.channel);
+            if (pairingData.id > 0) {  // do not replay to server itself
+                if (pairingData.msgType == PAIRING) {
+                    pairingData.id = 0;  // 0 is server
+                    // Server is in AP_STA mode: peers need to send data to server soft AP MAC address
+                    memcpy(&pairingData.macAddr, mac_addr, sizeof(pairingData.macAddr));
+                    pairingData.channel = chan;
+                    Serial.println("send response");
+                    memcpy(&clients[conCount].macAddr, mac_addr, sizeof(clients[conCount].macAddr));
+                    clients[conCount].channel = chan;
+                    EEPROM.put(sizeof(connection_data) * conCount + 1, clients[conCount]);
+                    EEPROM.commit();
+                    if(addPeer(mac_addr)){
+                        conCount++;
+                    }
+                    WiFi.softAPmacAddress(pairingData.macAddr);
+                    if (esp_now_is_peer_exist(mac_addr)) {
+                        esp_err_t result = esp_err_t(esp_now_send(mac_addr, (uint8_t *)&pairingData, sizeof(pairingData)));
+                        Serial.println(result);
+                    } else {
+                        Serial.println("PEER NOT CONNECTED");
+                    }
+
+                }
+            }
+            break;
+    }
+}
+void OnDataSent(uint8_t *mac_addr, uint8_t sendStatus) {
     Serial.print("Last Packet Send Status: ");
     if (sendStatus == ESP_OK) {
         Serial.println("Delivery Success to ");
-        // espWrapper::printMAC(reinterpret_cast<const int *>(macAddr));
-        pEspWrapper->messageSended++;
+        printMAC(mac_addr);
 
     } else {
         Serial.println("Delivery Failed to ");
-        espWrapper::printMAC(macAddr);
+        printMAC(mac_addr);
         Serial.print("Status:");
         Serial.println(sendStatus);
     }
     Serial.println();
-    Serial.println("ended send callback");
-}
-
-// Callback when data is received
-void OnDataRecv(int *mac, int *incomingData, int len) {
-    Serial.print("Size of message : ");
-    Serial.print(len);
-    Serial.print(" from ");
-    espWrapper::printMAC(mac);
-    Serial.println();
-    auto type = static_cast<MessageType>(incomingData[0]);
-    switch (type) {
-        case SET_INIT: {
-            structMessage message = reinterpret_cast<structMessage &&>(incomingData);
-            espWrapper::espWrapper_->wifiName = message.WiFiName;
-            Serial.print("Wifi name seted:");
-            Serial.println(message.WiFiName);
-        }
-        case PAIRING: {
-
-            memcpy(&espWrapper::espWrapper_->server, incomingData, sizeof(espWrapper::espWrapper_->server));
-            if (espWrapper::espWrapper_->server.role == MAIN ||
-                espWrapper::espWrapper_->server.role == SWITCH) {  // the message comes from peerInfo
-                Serial.print("Pairing done for ");
-                espWrapper::printMAC(mac);
-                memcpy(espWrapper::espWrapper_->server.macAddr, mac,
-                       sizeof(&espWrapper::espWrapper_->server.macAddr));
-                Serial.print(" on channel ");
-                Serial.print(espWrapper::espWrapper_->server.channel);  // channel used by the peerInfo
-                Serial.print(" in ");
-                Serial.print(millis() - espWrapper::espWrapper_->start);
-                Serial.println("ms");
-                //esp_now_del_peer(pairingData.macAddr);
-                //esp_now_del_peer(mac);
-                EEPROM.put(1, espWrapper::espWrapper_->server);
-                EEPROM.commit();
-                espWrapper::espWrapper_->addPear();
-                // add the peerInfo to the peer list
-                espWrapper::espWrapper_->pairingStatus = PAIR_PAIRED;
-                WiFi.mode(WIFI_AP_STA);
-                WiFi.softAP(
-                        "rssid_test4");                                                              // set the pairing status
-            }
-
-        }
-    }
 }
 #endif //BAUNAVI_MAIN_CALLBACKS_HPP

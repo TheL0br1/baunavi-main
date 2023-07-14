@@ -1,5 +1,6 @@
 //for esp8266-32 compatibility
 #include <cstdint>
+#include<list>
 typedef u8 uint8_t;
 #ifndef ESP32
 typedef enum {
@@ -40,15 +41,14 @@ enum EspRole { MAIN,
     SWITCH,
     BASE,
 };
-typedef struct structMessage {
+struct structMessage {
     MessageType msgType;
     char WiFiName[99];
-    int size;
 
 
 };
 
-typedef struct structMessagePairing {
+struct structMessagePairing {
     MessageType msgType;
     uint8_t macAddr[6];
     uint8_t channel;
@@ -60,12 +60,12 @@ typedef struct structMessagePairing {
         channel = WiFi.channel();
     }
 };
-typedef struct connectionData{
+struct connectionData{
     MessageType msgType;
     EspRole role;
     uint8_t *macAddr;
     uint8_t channel;
-    connectionData() :channel(1), role(BASE), msgType(DATA) {
+    connectionData() :channel(1), role(MAIN), msgType(DATA) {
         macAddr = new uint8_t[6]; // Выделение памяти для массива macAddr
         for (int i = 0; i < 6; ++i) {
             macAddr[i] = 0xFF;
@@ -73,7 +73,7 @@ typedef struct connectionData{
     }
 };
 
-typedef struct myData{
+struct myData{
     MessageType type;
     EspRole role;
     uint32_t serialId;
@@ -81,6 +81,16 @@ typedef struct myData{
     myData(uint32_t serialId, double charge): type(DATA), serialId(serialId), role(BASE), charge(charge){
 
     }
+};
+struct EspData{
+    EspRole role;
+    uint32_t serialId;
+    double charge;
+    char WifiName[99];
 
 
+};
+struct fireBaseData{
+    std::list<EspData> espData;
+    int floor;
 };

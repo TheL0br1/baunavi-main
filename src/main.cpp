@@ -19,21 +19,8 @@ void setup() {
 
 
 void loop() {
-    WiFi.forceSleepBegin();
-    WiFi.softAP(pEspWrapper->wifiName.c_str());
-
-    delay(10000);
-    WiFi.forceSleepWake();
-    delay(1);
-    WiFi.softAP(pEspWrapper->wifiName.c_str());
-    delay(10);
-    //Set values to send
 
 
-    // Send message via ESP-NOW to all peers
-    myData dataToSend = pEspWrapper->prepareDataToSend();
-    int res = esp_now_send(pEspWrapper->server.macAddr, reinterpret_cast<u8 *>(&dataToSend), sizeof(dataToSend));
-    espWrapper::printMAC(reinterpret_cast<const int *>(pEspWrapper->server.macAddr));
-    Serial.print(res);
+
 
 }

@@ -6,6 +6,7 @@
 #define BAUNAVI_MAIN_FIREBASE_HPP
 #include<Firebase_ESP_Client.h>
 #include<Firebase.h>
+#include "structures.h"
 
 #define API_KEY "AIzaSyCZVDiwImQyq3B9-xpylEe_3ye8jpOjUwI"
 #define DATABASE_URL "https://bau-navi-default-rtdb.europe-west1.firebasedatabase.app/"
@@ -23,6 +24,10 @@ public:
 
     FirebaseAuth auth;
     FirebaseConfig config;
+    void sendUpdate(fireBaseData& data);
+    FirebaseJsonArray* prepareMac(uint8_t* macAddr);
+    FirebaseJsonArray* prepareData(fireBaseData& data);
+    char* getWiFi();
 };
 
 

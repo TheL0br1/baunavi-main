@@ -76,7 +76,7 @@ espWrapper* espWrapper::getInstance() {
 }
 
 
-bool espWrapper::addPear() {
+bool espWrapper::addPear(uint8_t *macAddr, uint8_t channel) {
     memset(&peerInfo, 0, sizeof(peerInfo));
     esp_now_peer_info_t *peer = &peerInfo;
     memcpy(peerInfo.peer_addr, server.macAddr, sizeof(peerInfo.peer_addr));
@@ -123,61 +123,6 @@ void espWrapper::printMAC(const int* mac_addr) {
 void espWrapper::printMAC() {
     Serial.println(WiFi.macAddress());
 }
-PairingStatus espWrapper::autoPairing() {
-    switch (pairingStatus) {
-        case PAIR_REQUEST:
-            Serial.print("Pairing request on channel ");
-            Serial.println(channel);
-
-            // clean esp now
-            esp_now_deinit();
-            WiFi.mode(WIFI_STA);
-            // set WiFi channel
-            wifi_promiscuous_enable(1);
-            wifi_set_channel(channel);
-            wifi_promiscuous_enable(0);
-            /// WiFi.printDiag(Serial);
-            WiFi.disconnect();
-
-            // Init ESP-NOW
-            if (esp_now_init() != 0) {
-                Serial.println("Error initializing ESP-NOW");
-            }
-            esp_now_set_self_role(ESP_NOW_ROLE_COMBO);
-            // set callback routines
-            esp_now_register_send_cb(reinterpret_cast<esp_now_send_cb_t>(OnDataSent));
-            esp_now_register_recv_cb(reinterpret_cast<esp_now_recv_cb_t>(OnDataRecv));
-
-            // set pairing data to send to the peerInfo
-            pairingData = structMessagePairing( initWifi,serialId);
-            previousMillis = millis();
-
-            // add peer and send request
-            Serial.print("Send request to pair: ");
-            Serial.println(esp_now_send(broadcastAddressX, (uint8_t *)&pairingData, sizeof(pairingData)));
-            pairingStatus = PAIR_REQUESTED;
-            break;
-
-        case PAIR_REQUESTED:
-            // time out to allow receiving response from peerInfo
-            currentMillis = millis();
-            if (currentMillis - previousMillis > 100) {
-                previousMillis = currentMillis;
-                // time out expired,  try next channel
-                channel++;
-                if (channel > 13) {
-                    channel = 0;
-                }
-                pairingStatus = PAIR_REQUEST;
-            }
-            break;
-
-        case PAIR_PAIRED:
-            Serial.println("Paired!");
-            break;
-    }
-    return pairingStatus;
-}
 
 void espWrapper::initEEPromData() {
     Serial.begin(115200);
@@ -190,8 +135,7 @@ void espWrapper::initEEPromData() {
             EEPROM.write(i, 0xFF);
         }
     }
-    EEPROM.get(eepromIterator, server);
-    eepromIterator+=sizeof(server);
+
     EEPROM.get(eepromIterator, initWifi);
     eepromIterator++;
     if(initWifi){
