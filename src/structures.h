@@ -48,13 +48,13 @@ struct structMessage {
 
 };
 
-struct structMessagePairing {
+struct messagePairing {
     MessageType msgType;
     uint8_t macAddr[6];
     uint8_t channel;
     uint32_t serialId;
     bool initWifi;
-    structMessagePairing(bool initWifi, uint32_t serialId) :
+    messagePairing(bool initWifi, uint32_t serialId) :
     msgType(PAIRING),initWifi(initWifi), serialId(serialId){
         WiFi.macAddress(macAddr);
         channel = WiFi.channel();
@@ -71,6 +71,13 @@ struct connectionData{
             macAddr[i] = 0xFF;
         }
     }
+    connectionData(uint8_t channel, uint8_t* macAddr, EspRole role):
+    channel(channel), role(role), msgType(DATA){
+        this->macAddr = new uint8_t[6]; // Выделение памяти для массива macAddr
+        memcpy_P(this->macAddr, macAddr, sizeof(uint8_t)*6);
+
+    }
+
 };
 
 struct myData{
@@ -93,7 +100,7 @@ struct myData{
     }
 };
 struct EspData{
-    EspRole role
+    EspRole role;x
     uint32_t serialId;
     double charge;
     char WifiName[99];

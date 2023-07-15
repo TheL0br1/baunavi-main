@@ -31,9 +31,9 @@ espWrapper::espWrapper(){
     WiFi.mode(WIFI_AP_STA);
     WiFi.softAP(wifiName.c_str());
     Serial.println(WiFi.macAddress());
-    if (server.macAddr[0] != 0xFF && server.macAddr[0] != 0) {
+    if (cliet.macAddr[0] != 0xFF && server.macAddr[0] != 0) {
         Serial.println("PAIRED TO:");
-        printMAC(reinterpret_cast<const int *>(server.macAddr));
+        printMAC(server.macAddr);
         if(addPear())
         {
             esp_now_send((server.macAddr),
@@ -43,15 +43,10 @@ espWrapper::espWrapper(){
         }  // add the peerInfo to the peer list
     }
     else{
-        pairingData = structMessagePairing(initWifi, serialId);
+        pairingData = messagePairing(initWifi, serialId);
     }
     esp_now_register_recv_cb(reinterpret_cast<esp_now_recv_cb_t>(OnDataRecv));
     esp_now_register_send_cb(reinterpret_cast<esp_now_send_cb_t>(OnDataSent));
-    while (pairingStatus != PAIR_PAIRED) {
-        start = millis();
-        autoPairing();
-        delay(100);
-    }
     WiFi.mode(WIFI_AP_STA);
     WiFi.softAP("notInit");
     WiFi.setSleepMode(WIFI_LIGHT_SLEEP);
@@ -76,12 +71,12 @@ espWrapper* espWrapper::getInstance() {
 }
 
 
-bool espWrapper::addPear(uint8_t *macAddr, uint8_t channel) {
+bool espWrapper::addPear(uint8_t *macAddr, uint8_t channel, connectionData conData) {
     memset(&peerInfo, 0, sizeof(peerInfo));
     esp_now_peer_info_t *peer = &peerInfo;
-    memcpy(peerInfo.peer_addr, server.macAddr, sizeof(peerInfo.peer_addr));
+    memcpy(peerInfo.peer_addr, clients[conCount].macAddr, sizeof(peerInfo.peer_addr));
 
-    peerInfo.channel = server.channel;  // pick a channel
+    peerInfo.channel = clients[conCount].channel;  // pick a channel
     peerInfo.encrypt = 0;     // no encryption
     // check if the peer exists
     bool exists = esp_now_is_peer_exist(peerInfo.peer_addr);
@@ -106,7 +101,7 @@ bool espWrapper::addPear(uint8_t *macAddr, uint8_t channel) {
         }
     }
 }
-void espWrapper::printMAC(const int* mac_addr) {
+void espWrapper::printMAC(const uint8_t* mac_addr) {
     for (int i = 0; i < 6; ++i) {
         // Use the 'printf' function to format and print each byte
         printf("%02X", mac_addr[i]);
