@@ -31,20 +31,6 @@ espWrapper::espWrapper(){
     WiFi.mode(WIFI_AP_STA);
     WiFi.softAP(wifiName.c_str());
     Serial.println(WiFi.macAddress());
-    if (cliet.macAddr[0] != 0xFF && server.macAddr[0] != 0) {
-        Serial.println("PAIRED TO:");
-        printMAC(server.macAddr);
-        if(addPear())
-        {
-            esp_now_send((server.macAddr),
-                         reinterpret_cast<u8 *>(&pairingData), sizeof(pairingData));
-            pairingStatus = PAIR_PAIRED;
-            delay(1000);
-        }  // add the peerInfo to the peer list
-    }
-    else{
-        pairingData = messagePairing(initWifi, serialId);
-    }
     esp_now_register_recv_cb(reinterpret_cast<esp_now_recv_cb_t>(OnDataRecv));
     esp_now_register_send_cb(reinterpret_cast<esp_now_send_cb_t>(OnDataSent));
     WiFi.mode(WIFI_AP_STA);
@@ -87,7 +73,7 @@ bool espWrapper::addPear(uint8_t *macAddr, uint8_t channel, connectionData conDa
     } else {
         auto addStatus = esp_err_t(esp_now_add_peer(peer->peer_addr, ESP_NOW_ROLE_COMBO, peer->channel, nullptr, 0));  // add the peerInfo to the peer list
         Serial.print("Pairing to ");
-        printMAC(reinterpret_cast<const int *>(peer->peer_addr));
+        printMAC(peer->peer_addr);
         Serial.println();
 
         //Serial.println(peer->channel);
