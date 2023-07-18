@@ -18,7 +18,7 @@ public:
     long long start;
     connectionData clients[5]= {connectionData()};
     uint32_t serialId = 0;
-    messagePairing pairingData = messagePairing(true, 0);
+    messagePairing pairingData = messagePairing("null", 0, MAIN);
     esp_now_peer_info_t peerInfo{};
     std::string wifiName="null";
     bool initWifi = false;
@@ -28,6 +28,7 @@ public:
     int conCount = 0;
     PairingStatus pairingStatus = PAIR_REQUEST;
     uint16_t eepromIterator = 1;
+    fireBaseData fireBaseData_ = fireBaseData();
     static espWrapper *espWrapper_;
     static void printMAC();
     double getCharge();
@@ -37,7 +38,7 @@ public:
     void initEEPromData();
     unsigned long currentMillis{};
     bool setWifi(char* WifiName);
-    myData addClient(connectionData data);
+    myData addClient(messagePairing data);
     fireBaseData prepareDataToFireBase();
 
 private:

@@ -53,29 +53,34 @@ struct messagePairing {
     uint8_t channel;
     EspRole role;
     uint32_t serialId;
-    bool initWifi;
-    messagePairing(bool initWifi, uint32_t serialId, EspRole role) :
-    msgType(PAIRING),initWifi(initWifi), serialId(serialId), role(role){
+    char WiFiName[99];
+    messagePairing(char* WifiName, uint32_t serialId, EspRole role) :
+    msgType(PAIRING),serialId(serialId), role(role){
         WiFi.macAddress(macAddr);
         channel = WiFi.channel();
+        memcpy(this->WiFiName, WifiName, sizeof(char)*99);
     }
 };
 struct connectionData{
-    MessageType msgType;
     EspRole role;
     uint8_t *macAddr;
     uint8_t channel;
-    connectionData() :channel(1), role(MAIN), msgType(DATA) {
+    connectionData() :channel(1), role(MAIN) {
         macAddr = new uint8_t[6]; // Выделение памяти для массива macAddr
         for (int i = 0; i < 6; ++i) {
             macAddr[i] = 0xFF;
         }
     }
     connectionData(uint8_t channel, uint8_t* macAddr, EspRole role):
-    channel(channel), role(role), msgType(DATA){
+    channel(channel), role(role){
         this->macAddr = new uint8_t[6]; // Выделение памяти для массива macAddr
         memcpy_P(this->macAddr, macAddr, sizeof(uint8_t)*6);
-
+    }
+    connectionData(messagePairing data) {
+        this->macAddr = new uint8_t[6]; // Выделение памяти для массива macAddr
+        memcpy_P(this->macAddr, data.macAddr, sizeof(uint8_t)*6);
+        this->channel = data.channel;
+        this->role = data.role;
     }
 
 };
@@ -104,18 +109,23 @@ struct EspData{
     uint32_t serialId;
     double charge;
     char WifiName[99];
-    EspData(connectionData data){
-        this->role = data.role;
-        this->serialId = data.serialId;
-        this->charge = data.charge;
-        memcpy(this->WifiName, data.WiFiName, sizeof(char)*99);
+    EspData(messagePairing msgPairing): role(msgPairing.role), serialId(msgPairing.serialId), charge(-1){
+        memcpy_P(WifiName, msgPairing.WiFiName, sizeof(char)*99);
     }
 
 };
+
+
 struct fireBaseData{
+
+
     std::list<EspData> espData;
     int floor;
     fireBaseData(int floor, std::list<EspData> espData): floor(floor), espData(espData){
 
+    }
+    fireBaseData() {
+        this->espData = std::list<EspData>();
+        this->floor = 0;
     }
 };

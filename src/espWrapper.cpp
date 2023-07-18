@@ -130,8 +130,9 @@ void espWrapper::initEEPromData() {
     }
 }
 
-myData espWrapper::addClient(connectionData data) {
-    clients[conCount] = data;
+myData espWrapper::addClient(messagePairing data) {
+    clients[conCount] = connectionData(data);
+    fireBaseData_.espData.push_back(EspData(data))
 }
 
 double espWrapper::getCharge(){
@@ -149,7 +150,7 @@ bool espWrapper::setWifi(char *WifiName) {
 }
 
 fireBaseData espWrapper::prepareDataToFireBase() {
-    return fireBaseData(1,std::list<EspData>(clients, clients+conCount));
+    return fireBaseData(1,);
 }
 
 

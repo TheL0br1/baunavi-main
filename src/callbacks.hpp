@@ -44,7 +44,6 @@ void OnDataRecv(uint8_t *mac_addr, uint8_t *incomingData, int len) {
                 pairing.channel = WiFi.channel();
                 pairing.msgType = PAIRING;
                 pairing.serialId = ESP.getChipId();
-                pairing.initWifi = true;
                 pairing.role = MAIN;
                 Serial.println("send response");
 
