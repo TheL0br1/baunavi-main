@@ -23,6 +23,7 @@ void setup() {
 
 void loop() {
     pFireBase->getUpdate();
+    pFireBase->sendUpdate(pEspWrapper->clients);
     delay(2000);
 
 

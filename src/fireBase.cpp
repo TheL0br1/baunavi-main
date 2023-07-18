@@ -47,7 +47,7 @@ void fireBase::sendUpdate(fireBaseData& data) {
     Serial_Printf("Setting array...");
     auto dataArray = prepareData(data);
     if (dataArray != nullptr) {
-        auto success = Firebase.RTDB.setArray(&fbdo, std::to_string(ESP.getChipId())+"/floors/modules/1", dataArray);
+        auto success = Firebase.RTDB.setArray(&fbdo, std::to_string(EspClass::getChipId())+"/floors/modules/1", dataArray);
         Serial_Printf("%s\n", success ? "OK" : fbdo.errorReason().c_str());
     } else {
         Serial_Printf("Failed to prepare data array.\n");
@@ -56,8 +56,7 @@ void fireBase::sendUpdate(fireBaseData& data) {
 }
 
 FirebaseJsonArray *fireBase::prepareData(fireBaseData& data) {
-    FirebaseJsonArray* array = new FirebaseJsonArray;
-    FirebaseJson json;
+    auto* array = new FirebaseJsonArray;
     for (auto& x : data.espData) {
 
         FirebaseJson json;
@@ -75,11 +74,6 @@ FirebaseJsonArray *fireBase::prepareData(fireBaseData& data) {
     Serial.println("\n---------");
     Serial.println(str);
     return array;
-}
-
-
-char *fireBase::getWiFi() {
-    return nullptr;
 }
 
 void fireBase::getUpdate() {

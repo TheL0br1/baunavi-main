@@ -38,6 +38,7 @@ public:
     unsigned long currentMillis{};
     bool setWifi(char* WifiName);
     myData addClient(connectionData data);
+    fireBaseData prepareDataToFireBase();
 
 private:
     espWrapper();

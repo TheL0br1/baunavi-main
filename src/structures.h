@@ -27,7 +27,6 @@ typedef struct {
     uint8_t encrypt;      /**< Peer encryption flag */
 } esp_now_peer_info_t;
 #endif
-#pragma once
 
 //structures for messaging
 enum MessageType { PAIRING, DATA,
@@ -91,13 +90,13 @@ struct myData{
     }
     void print(){
         Serial.print("MessageType: ");
-        Serial.println(type);
+        Serial.println(this->type);
         Serial.print("Role: ");
-        Serial.println(role);
+        Serial.println(this->role);
         Serial.print("Serial id ");
-        Serial.println(serialId);
+        Serial.println(this->serialId);
         Serial.print("Charge: ");
-        Serial.println(charge);
+        Serial.println(this->charge);
     }
 };
 struct EspData{
@@ -105,10 +104,18 @@ struct EspData{
     uint32_t serialId;
     double charge;
     char WifiName[99];
-
+    EspData(connectionData data){
+        this->role = data.role;
+        this->serialId = data.serialId;
+        this->charge = data.charge;
+        memcpy(this->WifiName, data.WiFiName, sizeof(char)*99);
+    }
 
 };
 struct fireBaseData{
     std::list<EspData> espData;
     int floor;
+    fireBaseData(int floor, std::list<EspData> espData): floor(floor), espData(espData){
+
+    }
 };

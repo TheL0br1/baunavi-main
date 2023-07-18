@@ -148,5 +148,9 @@ bool espWrapper::setWifi(char *WifiName) {
     return true;
 }
 
+fireBaseData espWrapper::prepareDataToFireBase() {
+    return fireBaseData(1,std::list<EspData>(clients, clients+conCount));
+}
+
 
 

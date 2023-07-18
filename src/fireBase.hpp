@@ -26,7 +26,7 @@ public:
     FirebaseConfig config;
     void sendUpdate(fireBaseData& data);
     FirebaseJsonArray* prepareData(fireBaseData& data);
-    char* getWiFi();
+
     void getUpdate();
 };
 
