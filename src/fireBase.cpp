@@ -47,21 +47,12 @@ void fireBase::sendUpdate(fireBaseData& data) {
     Serial_Printf("Setting array...");
     auto dataArray = prepareData(data);
     if (dataArray != nullptr) {
-        auto success = Firebase.RTDB.setArray(&fbdo, std::to_string(ESP.getChipId())+"/floors/modules/1", std::move(dataArray));
+        auto success = Firebase.RTDB.setArray(&fbdo, std::to_string(ESP.getChipId())+"/floors/modules/1", dataArray);
         Serial_Printf("%s\n", success ? "OK" : fbdo.errorReason().c_str());
     } else {
         Serial_Printf("Failed to prepare data array.\n");
     }
     delete dataArray;
-}
-
-FirebaseJsonArray *fireBase::prepareMac(uint8_t *macAddr) {
-    FirebaseJsonArray* array = new FirebaseJsonArray;
-    for (int i = 0; i < 6; i++) {
-        array->add(macAddr[i]);
-    }
-
-    return array;
 }
 
 FirebaseJsonArray *fireBase::prepareData(fireBaseData& data) {
@@ -89,4 +80,46 @@ FirebaseJsonArray *fireBase::prepareData(fireBaseData& data) {
 
 char *fireBase::getWiFi() {
     return nullptr;
+}
+
+void fireBase::getUpdate() {
+    if (!Firebase.ready()){
+        Serial.println("Firebase not init!");
+        return;
+    }
+    bool update = false;
+    Firebase.RTDB.getBool(&fbdo, std::to_string(ESP.getChipId())+"/update", &update);
+
+    if(!update){
+        Serial_Printf("No update.\n");
+        return;
+    }
+    Serial_Printf("Getting array...");
+    FirebaseJsonArray dataArray;
+    Firebase.RTDB.getArray(&fbdo, std::to_string(ESP.getChipId())+"/floors/modules/1", &dataArray);
+
+    if ( Firebase.RTDB.getArray(&fbdo,
+                                std::to_string(ESP.getChipId())+"/floors/modules",
+                                &dataArray)) {
+        String dataArrayStr;
+        dataArray.toString(dataArrayStr);
+        Serial_Printf("OK\n");
+        Serial_Printf("Array size: %d\n", dataArray.size());
+        for (size_t i = 0; i < dataArray.size(); i++) {
+            FirebaseJsonData json;
+            dataArray.get(json, (std::to_string(i)+"/serialId"));
+            Serial.println((json.to<int>()));
+            dataArray.get(json, (std::to_string(i)+"/Role"));
+            Serial.println((json.to<int>()));
+            //EspRole role = (EspRole)json.to<int>();
+            dataArray.get(json, (std::to_string(i)+"/Status"));
+            Serial.println((json.to<String>()));
+            dataArray.get(json, (std::to_string(i)+"/Charge"));
+            Serial.println((json.to<int>()));
+            Serial.println(json.to<const char*>());
+            Serial_Printf("---------\n");
+        }
+    } else {
+        Serial_Printf("Failed to get data array.\n");
+    }
 }

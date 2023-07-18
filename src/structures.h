@@ -52,10 +52,11 @@ struct messagePairing {
     MessageType msgType;
     uint8_t macAddr[6];
     uint8_t channel;
+    EspRole role;
     uint32_t serialId;
     bool initWifi;
-    messagePairing(bool initWifi, uint32_t serialId) :
-    msgType(PAIRING),initWifi(initWifi), serialId(serialId){
+    messagePairing(bool initWifi, uint32_t serialId, EspRole role) :
+    msgType(PAIRING),initWifi(initWifi), serialId(serialId), role(role){
         WiFi.macAddress(macAddr);
         channel = WiFi.channel();
     }
@@ -100,7 +101,7 @@ struct myData{
     }
 };
 struct EspData{
-    EspRole role;x
+    EspRole role;
     uint32_t serialId;
     double charge;
     char WifiName[99];

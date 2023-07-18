@@ -37,7 +37,7 @@ public:
     void initEEPromData();
     unsigned long currentMillis{};
     bool setWifi(char* WifiName);
-    myData prepareDataToSend();
+    myData addClient(connectionData data);
 
 private:
     espWrapper();

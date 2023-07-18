@@ -18,7 +18,7 @@ void OnDataRecv(uint8_t *mac_addr, uint8_t *incomingData, int len) {
     pEspWrapper->printMAC(mac_addr);
     myData data = myData(0, 0);
     messagePairing pairing = messagePairing(false, 0);
-
+    messagePairing recievedPairing = messagePairing(false, 0);
     Serial.println();
     uint8_t type = incomingData[0];  // first message byte is the type of message
     switch (type) {
@@ -31,7 +31,7 @@ void OnDataRecv(uint8_t *mac_addr, uint8_t *incomingData, int len) {
 
 
         case PAIRING:  // the message is a pairing request
-            memcpy(&pairing, incomingData, sizeof(messagePairing));
+            memcpy(&recievedPairing, incomingData, sizeof(messagePairing));
             Serial.println(pairing.msgType);
             Serial.print("Pairing request from: ");
             pEspWrapper->printMAC(mac_addr);
@@ -45,6 +45,7 @@ void OnDataRecv(uint8_t *mac_addr, uint8_t *incomingData, int len) {
                 pairing.msgType = PAIRING;
                 pairing.serialId = ESP.getChipId();
                 pairing.initWifi = true;
+                pairing.role = MAIN;
                 Serial.println("send response");
 
 
@@ -52,6 +53,12 @@ void OnDataRecv(uint8_t *mac_addr, uint8_t *incomingData, int len) {
                 if (esp_now_is_peer_exist((mac_addr))) {
                     esp_err_t result = esp_err_t(esp_now_send(mac_addr, (uint8_t *) &pairing, sizeof(messagePairing)));
                     Serial.println(result);
+                    if(result == ESP_OK){
+                        Serial.println("PEER CONNECTED");
+                        pEspWrapper->addClient(connectionData(recievedPairing.channel,mac_addr, recievedPairing.role));
+                    } else {
+                        Serial.println("PEER NOT CONNECTED");
+                    }
                 } else {
                     Serial.println("PEER NOT CONNECTED");
                 }

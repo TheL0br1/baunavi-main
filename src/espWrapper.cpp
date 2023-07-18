@@ -28,14 +28,18 @@ espWrapper::espWrapper(){
     Serial.println("ESP-NOW initializated succes");
     esp_now_set_self_role(ESP_NOW_ROLE_COMBO);
     this->initEEPromData();
-    WiFi.mode(WIFI_AP_STA);
-    WiFi.softAP(wifiName.c_str());
     Serial.println(WiFi.macAddress());
     esp_now_register_recv_cb(reinterpret_cast<esp_now_recv_cb_t>(OnDataRecv));
     esp_now_register_send_cb(reinterpret_cast<esp_now_send_cb_t>(OnDataSent));
     WiFi.mode(WIFI_AP_STA);
-    WiFi.softAP("notInit");
-    WiFi.setSleepMode(WIFI_LIGHT_SLEEP);
+    WiFi.softAP(wifiName.c_str());
+    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+    while (WiFi.status() != WL_CONNECTED){
+        Serial.print(".");
+        delay(300);
+    }
+    Serial.println("Access Point Created");
+
 
 }
 
@@ -126,8 +130,8 @@ void espWrapper::initEEPromData() {
     }
 }
 
-myData espWrapper::prepareDataToSend() {
-    return {serialId, getCharge()};
+myData espWrapper::addClient(connectionData data) {
+    clients[conCount] = data;
 }
 
 double espWrapper::getCharge(){

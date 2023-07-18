@@ -6,12 +6,15 @@
 #include <EEPROM.h>
 #include "structures.h"
 #include "espWrapper.hpp"
+#include "fireBase.hpp"
 
 espWrapper *pEspWrapper;
+fireBase *pFireBase;
 void setup() {
     Serial.begin(115200);
     Serial.println("esp started");
     pEspWrapper = espWrapper::getInstance();
+    pFireBase = fireBase::getInstance();
 
 
 }
@@ -19,8 +22,8 @@ void setup() {
 
 
 void loop() {
-
-
+    pFireBase->getUpdate();
+    delay(2000);
 
 
 }

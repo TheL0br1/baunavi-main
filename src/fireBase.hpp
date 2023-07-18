@@ -25,9 +25,9 @@ public:
     FirebaseAuth auth;
     FirebaseConfig config;
     void sendUpdate(fireBaseData& data);
-    FirebaseJsonArray* prepareMac(uint8_t* macAddr);
     FirebaseJsonArray* prepareData(fireBaseData& data);
     char* getWiFi();
+    void getUpdate();
 };
 
 
