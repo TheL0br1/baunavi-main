@@ -16,10 +16,8 @@ espWrapper* espWrapper::espWrapper_;
 
 espWrapper::espWrapper(){
     Serial.println("start constructor2");
-    WiFi.mode(WIFI_AP_STA);
-    WiFi.softAP("none");
     Serial.println(WiFi.macAddress());
-
+    this->initWiFi();
     if (esp_now_init() != 0) {
         Serial.println("Error initializing ESP-NOW");
         Serial.println(esp_now_init());
@@ -27,18 +25,12 @@ espWrapper::espWrapper(){
     }
     Serial.println("ESP-NOW initializated succes");
     esp_now_set_self_role(ESP_NOW_ROLE_COMBO);
-    this->initEEPromData();
+  //  this->initEEPromData();
     Serial.println(WiFi.macAddress());
     esp_now_register_recv_cb(reinterpret_cast<esp_now_recv_cb_t>(OnDataRecv));
     esp_now_register_send_cb(reinterpret_cast<esp_now_send_cb_t>(OnDataSent));
     WiFi.mode(WIFI_AP_STA);
-    WiFi.softAP(wifiName.c_str());
-    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
-    while (WiFi.status() != WL_CONNECTED){
-        Serial.print(".");
-        delay(300);
-    }
-    Serial.println("Access Point Created");
+    WiFi.softAP(wifiName);
 
 
 }
@@ -61,12 +53,12 @@ espWrapper* espWrapper::getInstance() {
 }
 
 
-bool espWrapper::addPear(uint8_t *macAddr, uint8_t channel, connectionData conData) {
+bool espWrapper::addPear(uint8_t *macAddr, uint8_t channel) {
     memset(&peerInfo, 0, sizeof(peerInfo));
     esp_now_peer_info_t *peer = &peerInfo;
-    memcpy(peerInfo.peer_addr, clients[conCount].macAddr, sizeof(peerInfo.peer_addr));
+    memcpy(peerInfo.peer_addr, macAddr, sizeof(peerInfo.peer_addr));
 
-    peerInfo.channel = clients[conCount].channel;  // pick a channel
+    peerInfo.channel = channel;  // pick a channel
     peerInfo.encrypt = 0;     // no encryption
     // check if the peer exists
     bool exists = esp_now_is_peer_exist(peerInfo.peer_addr);
@@ -91,17 +83,11 @@ bool espWrapper::addPear(uint8_t *macAddr, uint8_t channel, connectionData conDa
         }
     }
 }
-void espWrapper::printMAC(const uint8_t* mac_addr) {
-    for (int i = 0; i < 6; ++i) {
-        // Use the 'printf' function to format and print each byte
-        printf("%02X", mac_addr[i]);
-
-        // Print a colon (':') separator between each byte, except for the last byte
-        if (i < 5) {
-            Serial.print(":");
-        }
-    }
-
+void espWrapper::printMAC(const uint8_t* mac_addr){
+    char macStr[18];
+    snprintf(macStr, sizeof(macStr), "%02x:%02x:%02x:%02x:%02x:%02x",
+             mac_addr[0], mac_addr[1], mac_addr[2], mac_addr[3], mac_addr[4], mac_addr[5]);
+    Serial.print(macStr);
     Serial.println();
 }
 
@@ -126,13 +112,13 @@ void espWrapper::initEEPromData() {
     if(initWifi){
         EEPROM.get(eepromIterator, wifiName);
         Serial.print("Wifi name:");
-        Serial.println(wifiName.c_str() );
+        Serial.println(wifiName );
     }
 }
 
-myData espWrapper::addClient(messagePairing data) {
+void espWrapper::addClient(messagePairing data) {
     clients[conCount] = connectionData(data);
-    fireBaseData_.espData.push_back(EspData(data))
+    fireBaseData_.espData.push_back(EspData(data));
 }
 
 double espWrapper::getCharge(){
@@ -140,8 +126,8 @@ double espWrapper::getCharge(){
 }
 
 bool espWrapper::setWifi(char *WifiName) {
-    this->wifiName = WifiName;
-    WiFi.softAP(this->wifiName.c_str());
+    memcpy(this->wifiName, WifiName, sizeof(this->wifiName));
+    WiFi.softAP(this->wifiName);
     initWifi = true;
     EEPROM.put(eepromIterator, initWifi);
     eepromIterator+=sizeof(initWifi);
@@ -150,7 +136,27 @@ bool espWrapper::setWifi(char *WifiName) {
 }
 
 fireBaseData espWrapper::prepareDataToFireBase() {
-    return fireBaseData(1,);
+    return fireBaseData_;
+}
+
+void espWrapper::initWiFi() {
+    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+    while (WiFi.status() != WL_CONNECTED){
+        Serial.print(".");
+        delay(300);
+    }
+    Serial.println("Access Point Created");
+}
+
+void espWrapper::updateData(myData data) {
+    for(auto &x : fireBaseData_.espData){
+        if(x.serialId == data.serialId){
+            x = EspData(data);
+            
+            return;
+        }
+    }
+
 }
 
 

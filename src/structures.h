@@ -27,7 +27,7 @@ typedef struct {
     uint8_t encrypt;      /**< Peer encryption flag */
 } esp_now_peer_info_t;
 #endif
-
+#pragma once
 //structures for messaging
 enum MessageType { PAIRING, DATA,
     SET_INIT,
@@ -56,9 +56,11 @@ struct messagePairing {
     char WiFiName[99];
     messagePairing(char* WifiName, uint32_t serialId, EspRole role) :
     msgType(PAIRING),serialId(serialId), role(role){
+        Serial.println("messagePairing constructor start" );
         WiFi.macAddress(macAddr);
         channel = WiFi.channel();
-        memcpy(this->WiFiName, WifiName, sizeof(char)*99);
+        strcpy(this->WiFiName, WifiName);
+        Serial.println("messagePairing constructor end" );
     }
 };
 struct connectionData{
@@ -90,8 +92,8 @@ struct myData{
     EspRole role;
     uint32_t serialId;
     double charge;
-    myData(uint32_t serialId, double charge): type(DATA), serialId(serialId), role(BASE), charge(charge){
-
+    myData(uint32_t serialId, double charge): type(DATA), serialId(serialId), role(MAIN), charge(charge){
+        Serial.println("myData constructor");
     }
     void print(){
         Serial.print("MessageType: ");
@@ -103,17 +105,23 @@ struct myData{
         Serial.print("Charge: ");
         Serial.println(this->charge);
     }
-};
+} __attribute__((packed));
 struct EspData{
+    EspData(myData data) {
+        this->role = data.role;
+        this->serialId = data.serialId;
+        this->charge = data.charge;
+    }
+
     EspRole role;
     uint32_t serialId;
     double charge;
     char WifiName[99];
     EspData(messagePairing msgPairing): role(msgPairing.role), serialId(msgPairing.serialId), charge(-1){
-        memcpy_P(WifiName, msgPairing.WiFiName, sizeof(char)*99);
+        strcpy(this->WifiName, msgPairing.WiFiName);
     }
 
-};
+} __attribute__((packed));
 
 
 struct fireBaseData{
@@ -128,4 +136,4 @@ struct fireBaseData{
         this->espData = std::list<EspData>();
         this->floor = 0;
     }
-};
+} __attribute__((packed));

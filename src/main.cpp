@@ -16,15 +16,12 @@ void setup() {
     pEspWrapper = espWrapper::getInstance();
     pFireBase = fireBase::getInstance();
 
-
 }
 
 
 
 void loop() {
-    pFireBase->getUpdate();
-    pFireBase->sendUpdate(pEspWrapper->clients);
-    delay(2000);
-
-
+     pFireBase->getUpdate();
+     pFireBase->sendUpdate(pEspWrapper->fireBaseData_);
+     delay(1000);
 }

@@ -8,6 +8,7 @@
 
 fireBase* fireBase::fireBase_ = nullptr;
 fireBase::fireBase() {
+    Serial.println("Firebase init");
     //FIREBASE PART
     config.api_key = API_KEY;
 
@@ -29,6 +30,12 @@ fireBase::fireBase() {
 
     Firebase.begin(&config, &auth);
     Firebase.reconnectWiFi(true);
+    Firebase.RTDB.setMaxRetry(&fbdo, 3);
+// Optional, set number of error resumable queues
+    Firebase.RTDB.setMaxErrorQueue(&fbdo, 30);
+    fbdo.setResponseSize(8192);
+    Serial.println("Firebase init done");
+
 }
 
 fireBase *fireBase::getInstance() {
@@ -46,8 +53,11 @@ void fireBase::sendUpdate(fireBaseData& data) {
 
     Serial_Printf("Setting array...");
     auto dataArray = prepareData(data);
-    if (dataArray != nullptr) {
-        auto success = Firebase.RTDB.setArray(&fbdo, std::to_string(EspClass::getChipId())+"/floors/modules/1", dataArray);
+    String str;
+    dataArray->toString(str);
+    Serial.println(str.c_str());
+    if (!str.isEmpty()) {
+        auto success = Firebase.RTDB.setArray(&fbdo, "modelSensors"+std::to_string(EspClass::getChipId())+"/floors/modules/1", std::move(dataArray));
         Serial_Printf("%s\n", success ? "OK" : fbdo.errorReason().c_str());
     } else {
         Serial_Printf("Failed to prepare data array.\n");
