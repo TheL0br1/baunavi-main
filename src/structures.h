@@ -40,12 +40,6 @@ enum EspRole { MAIN,
     SWITCH,
     BASE,
 };
-struct structMessage {
-    MessageType msgType;
-    char WiFiName[99];
-
-
-};
 
 struct messagePairing {
     MessageType msgType;
@@ -53,7 +47,7 @@ struct messagePairing {
     uint8_t channel;
     EspRole role;
     uint32_t serialId;
-    char WiFiName[99];
+    char WiFiName[51];
     messagePairing(char* WifiName, uint32_t serialId, EspRole role) :
     msgType(PAIRING),serialId(serialId), role(role){
         Serial.println("messagePairing constructor start" );
@@ -62,10 +56,21 @@ struct messagePairing {
         strcpy(this->WiFiName, WifiName);
         Serial.println("messagePairing constructor end" );
     }
+    messagePairing(messagePairing &message){
+        Serial.println("messagePairing copy constructor start" );
+        msgType = message.msgType;
+        memcpy_P(macAddr, message.macAddr, sizeof(uint8_t)*6);
+        channel = message.channel;
+        role = message.role;
+        serialId = message.serialId;
+        strcpy(WiFiName, message.WiFiName);
+        Serial.println("messagePairing copy constructor end" );
+    }
 };
 struct connectionData{
     EspRole role;
     uint8_t *macAddr;
+    uint32_t serialId;
     uint8_t channel;
     connectionData() :channel(1), role(MAIN) {
         macAddr = new uint8_t[6]; // Выделение памяти для массива macAddr
@@ -83,6 +88,7 @@ struct connectionData{
         memcpy_P(this->macAddr, data.macAddr, sizeof(uint8_t)*6);
         this->channel = data.channel;
         this->role = data.role;
+        this->serialId = data.serialId;
     }
 
 };
@@ -91,7 +97,7 @@ struct myData{
     MessageType type;
     EspRole role;
     uint32_t serialId;
-    double charge;
+    float charge;
     myData(uint32_t serialId, double charge): type(DATA), serialId(serialId), role(MAIN), charge(charge){
         Serial.println("myData constructor");
     }
@@ -116,7 +122,7 @@ struct EspData{
     EspRole role;
     uint32_t serialId;
     double charge;
-    char WifiName[99];
+    char WifiName[51];
     EspData(messagePairing msgPairing): role(msgPairing.role), serialId(msgPairing.serialId), charge(-1){
         strcpy(this->WifiName, msgPairing.WiFiName);
     }

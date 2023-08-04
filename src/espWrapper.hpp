@@ -18,15 +18,12 @@ public:
     long long start;
     connectionData clients[5]= {connectionData()};
     uint32_t serialId = 0;
-    messagePairing pairingData = messagePairing("null", 0, MAIN);
     esp_now_peer_info_t peerInfo{};
     char wifiName[99]="null";
     bool initWifi = false;
     unsigned long previousMillis{};
     double charge=-1;
-    int messageSended=0;
     int conCount = 0;
-    PairingStatus pairingStatus = PAIR_REQUEST;
     uint16_t eepromIterator = 1;
     fireBaseData fireBaseData_ = fireBaseData();
     static espWrapper *espWrapper_;

@@ -47,7 +47,6 @@ void OnDataRecv(uint8_t *mac_addr, uint8_t *incomingData, int len) {
                 Serial.println("send response");
 
                 if(pEspWrapper->addPear(mac_addr, recievedPairing.channel)){
-                    pEspWrapper->conCount++;
                 }
                 WiFi.softAPmacAddress(pairing.macAddr);
                 if (esp_now_is_peer_exist((mac_addr))) {

@@ -116,10 +116,6 @@ void espWrapper::initEEPromData() {
     }
 }
 
-void espWrapper::addClient(messagePairing data) {
-    clients[conCount] = connectionData(data);
-    fireBaseData_.espData.push_back(EspData(data));
-}
 
 double espWrapper::getCharge(){
     return (analogRead(A0) / 1023.0) * VREF * ((DIV_R1 + DIV_R2) / DIV_R2);
@@ -149,14 +145,23 @@ void espWrapper::initWiFi() {
 }
 
 void espWrapper::updateData(myData data) {
+    bool flag = false;
     for(auto &x : fireBaseData_.espData){
         if(x.serialId == data.serialId){
             x = EspData(data);
-            
+            flag = true;
             return;
         }
     }
+    if(!flag){
+        fireBaseData_.espData.push_back(EspData(data));
+    }
 
+}
+
+void espWrapper::addClient(messagePairing data) {
+    clients[conCount] = connectionData(data);
+    conCount++;
 }
 
 

@@ -57,7 +57,7 @@ void fireBase::sendUpdate(fireBaseData& data) {
     dataArray->toString(str);
     Serial.println(str.c_str());
     if (!str.isEmpty()) {
-        auto success = Firebase.RTDB.setArray(&fbdo, "modelSensors"+std::to_string(EspClass::getChipId())+"/floors/modules/1", std::move(dataArray));
+        auto success = Firebase.RTDB.setArray(&fbdo, "modelSensors/"+std::to_string(EspClass::getChipId())+"/floors/1/modules", std::move(dataArray));
         Serial_Printf("%s\n", success ? "OK" : fbdo.errorReason().c_str());
     } else {
         Serial_Printf("Failed to prepare data array.\n");
@@ -75,6 +75,7 @@ FirebaseJsonArray *fireBase::prepareData(fireBaseData& data) {
         json.add("Role", (int)x.role);
         json.add("Status", "WORKING");
         json.add("Charge", x.charge);
+        json.add("WiFiName", x.WifiName);
 
         array->add(json);
 
@@ -87,43 +88,44 @@ FirebaseJsonArray *fireBase::prepareData(fireBaseData& data) {
 }
 
 void fireBase::getUpdate() {
-    if (!Firebase.ready()){
+    if (!Firebase.ready()) {
         Serial.println("Firebase not init!");
         return;
     }
     bool update = false;
-    Firebase.RTDB.getBool(&fbdo, std::to_string(ESP.getChipId())+"/update", &update);
+    Firebase.RTDB.getBool(&fbdo, "modelSensors/" + std::to_string(ESP.getChipId()) + "/update", &update);
 
-    if(!update){
+    if (!update) {
         Serial_Printf("No update.\n");
         return;
     }
     Serial_Printf("Getting array...");
     FirebaseJsonArray dataArray;
-    Firebase.RTDB.getArray(&fbdo, std::to_string(ESP.getChipId())+"/floors/modules/1", &dataArray);
+    Firebase.RTDB.getArray(&fbdo, "modelSensors/" + std::to_string(ESP.getChipId()) + "/floors/modules/1", &dataArray);
 
-    if ( Firebase.RTDB.getArray(&fbdo,
-                                std::to_string(ESP.getChipId())+"/floors/modules",
-                                &dataArray)) {
+    if (Firebase.RTDB.getArray(&fbdo,
+                               std::to_string(ESP.getChipId()) + "/floors/modules",
+                               &dataArray)) {
         String dataArrayStr;
         dataArray.toString(dataArrayStr);
         Serial_Printf("OK\n");
         Serial_Printf("Array size: %d\n", dataArray.size());
         for (size_t i = 0; i < dataArray.size(); i++) {
             FirebaseJsonData json;
-            dataArray.get(json, (std::to_string(i)+"/serialId"));
+            dataArray.get(json, (std::to_string(i) + "/serialId"));
             Serial.println((json.to<int>()));
-            dataArray.get(json, (std::to_string(i)+"/Role"));
+            dataArray.get(json, (std::to_string(i) + "/Role"));
             Serial.println((json.to<int>()));
             //EspRole role = (EspRole)json.to<int>();
-            dataArray.get(json, (std::to_string(i)+"/Status"));
+            dataArray.get(json, (std::to_string(i) + "/Status"));
             Serial.println((json.to<String>()));
-            dataArray.get(json, (std::to_string(i)+"/Charge"));
+            dataArray.get(json, (std::to_string(i) + "/Charge"));
             Serial.println((json.to<int>()));
-            Serial.println(json.to<const char*>());
+            Serial.println(json.to<const char *>());
             Serial_Printf("---------\n");
         }
     } else {
         Serial_Printf("Failed to get data array.\n");
     }
+    Firebase.RTDB.setBool(&fbdo, "modelSensors/" + std::to_string(ESP.getChipId()) + "/update", false);
 }
