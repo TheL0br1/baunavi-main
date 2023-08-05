@@ -17,10 +17,8 @@ public:
     uint8_t channel=1;
     long long start;
     connectionData clients[5]= {connectionData()};
-    uint32_t serialId = 0;
+    uint32_t serialId = ESP.getChipId();
     esp_now_peer_info_t peerInfo{};
-    char wifiName[99]="null";
-    bool initWifi = false;
     unsigned long previousMillis{};
     double charge=-1;
     int conCount = 0;
@@ -32,9 +30,7 @@ public:
     bool addPear(uint8_t *macAddr, uint8_t channel);
     static void printMAC(const uint8_t* mac_addr);
     static espWrapper* getInstance();
-    void initEEPromData();
     unsigned long currentMillis{};
-    bool setWifi(char* WifiName);
     void addClient(messagePairing data);
     fireBaseData prepareDataToFireBase();
     void initWiFi();

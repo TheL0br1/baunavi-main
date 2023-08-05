@@ -30,7 +30,10 @@ espWrapper::espWrapper(){
     esp_now_register_recv_cb(reinterpret_cast<esp_now_recv_cb_t>(OnDataRecv));
     esp_now_register_send_cb(reinterpret_cast<esp_now_send_cb_t>(OnDataSent));
     WiFi.mode(WIFI_AP_STA);
-    WiFi.softAP(wifiName);
+    WiFi.softAP(std::to_string(ESP.getChipId()).c_str());
+    Serial.println(WiFi.macAddress());
+    WiFi.macAddress(macAddr);
+    updateData(myData{serialId, getCharge()});
 
 
 }
@@ -95,41 +98,12 @@ void espWrapper::printMAC() {
     Serial.println(WiFi.macAddress());
 }
 
-void espWrapper::initEEPromData() {
-    Serial.begin(115200);
-    EEPROM.begin(EEPROM_ALLOC);
-    Serial.print("EEPROM INIT: ");
-    Serial.print(EEPROM_ALLOC);
-    Serial.println(" bytes"); // Initialize EEPROM with 512 bytes of space
-    if (EEPROM.read(0) != 0xFF) {
-        for (int i = 0; i < EEPROM.length(); i++) {
-            EEPROM.write(i, 0xFF);
-        }
-    }
-
-    EEPROM.get(eepromIterator, initWifi);
-    eepromIterator++;
-    if(initWifi){
-        EEPROM.get(eepromIterator, wifiName);
-        Serial.print("Wifi name:");
-        Serial.println(wifiName );
-    }
-}
 
 
 double espWrapper::getCharge(){
     return (analogRead(A0) / 1023.0) * VREF * ((DIV_R1 + DIV_R2) / DIV_R2);
 }
 
-bool espWrapper::setWifi(char *WifiName) {
-    memcpy(this->wifiName, WifiName, sizeof(this->wifiName));
-    WiFi.softAP(this->wifiName);
-    initWifi = true;
-    EEPROM.put(eepromIterator, initWifi);
-    eepromIterator+=sizeof(initWifi);
-    EEPROM.put(eepromIterator, wifiName);
-    return true;
-}
 
 fireBaseData espWrapper::prepareDataToFireBase() {
     return fireBaseData_;

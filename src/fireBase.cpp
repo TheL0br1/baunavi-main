@@ -75,7 +75,6 @@ FirebaseJsonArray *fireBase::prepareData(fireBaseData& data) {
         json.add("Role", (int)x.role);
         json.add("Status", "WORKING");
         json.add("Charge", x.charge);
-        json.add("WiFiName", x.WifiName);
 
         array->add(json);
 

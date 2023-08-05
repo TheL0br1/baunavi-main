@@ -1,6 +1,7 @@
 //
 // Created by User on 7/11/2023.
 //
+// callback functions for esp-now
 
 #ifndef BAUNAVI_MAIN_CALLBACKS_HPP
 #define BAUNAVI_MAIN_CALLBACKS_HPP
@@ -16,9 +17,9 @@ void OnDataRecv(uint8_t *mac_addr, uint8_t *incomingData, int len) {
     Serial.print(len);
     Serial.print(" bytes of data received from : ");
     pEspWrapper->printMAC(mac_addr);
-    myData data = myData(0, 0.1);
-    messagePairing pairing = messagePairing(pEspWrapper->wifiName, ESP.getChipId(), MAIN);
-    messagePairing recievedPairing = messagePairing("", 0, MAIN);
+    myData data = myData(ESP.getChipId(), 0.1, );
+    messagePairing pairing = messagePairing(ESP.getChipId(), MAIN);
+    auto recievedPairing = messagePairing(0, MAIN);
     Serial.println();
     uint8_t type = incomingData[0];  // first message byte is the type of message
     switch (type) {
@@ -36,6 +37,8 @@ void OnDataRecv(uint8_t *mac_addr, uint8_t *incomingData, int len) {
             pEspWrapper->printMAC(mac_addr);
             Serial.println();
             Serial.println(pairing.channel);
+            Serial.println("pairingMessage data");
+            recievedPairing.print();
             if (true) {  // do not replay to server itself
                 // Server is in AP_STA mode: peers need to send data to server soft AP MAC address
 
