@@ -24,7 +24,7 @@ public:
     FirebaseAuth auth;
     FirebaseConfig config;
     void sendUpdate(fireBaseData& data);
-    FirebaseJsonArray* prepareData(fireBaseData& data);
+    FirebaseJson *prepareData(fireBaseData &data, int index);
 
     void getUpdate();
 };

@@ -152,13 +152,13 @@ struct EspData{
 struct fireBaseData{
 
 
-    std::list<EspData> espData;
+    std::vector<EspData> espData;
     int floor;
-    fireBaseData(int floor, std::list<EspData> espData): floor(floor), espData(espData){
+    fireBaseData(int floor, std::vector<EspData> espData): floor(floor), espData(espData){
 
     }
     fireBaseData() {
-        this->espData = std::list<EspData>();
+        this->espData = std::vector<EspData>();
         this->floor = 0;
     }
 } __attribute__((packed));

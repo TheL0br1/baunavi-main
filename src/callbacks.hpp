@@ -17,7 +17,7 @@ void OnDataRecv(uint8_t *mac_addr, uint8_t *incomingData, int len) {
     Serial.print(len);
     Serial.print(" bytes of data received from : ");
     pEspWrapper->printMAC(mac_addr);
-    myData data = myData(ESP.getChipId(), 0.1, );
+    myData data = myData(ESP.getChipId(), 0.1, MAIN);
     messagePairing pairing = messagePairing(ESP.getChipId(), MAIN);
     auto recievedPairing = messagePairing(0, MAIN);
     Serial.println();

@@ -52,38 +52,36 @@ void fireBase::sendUpdate(fireBaseData& data) {
     }
 
     Serial_Printf("Setting array...");
-    auto dataArray = prepareData(data);
-    String str;
-    dataArray->toString(str);
-    Serial.println(str.c_str());
-    if (!str.isEmpty()) {
-        auto success = Firebase.RTDB.setArray(&fbdo, "modelSensors/"+std::to_string(EspClass::getChipId())+"/floors/1/modules", std::move(dataArray));
+
+    for (auto i = 0; i < data.espData.size(); i++)
+    {
+        Serial_Printf("Setting array... %d\n", i);
+        auto data_ = prepareData(data, i);
+        String str;
+        data_->toString(str);
+        if(str.isEmpty()) {
+           continue;
+        }
+        Serial_Printf("Setting array... %s\n", str.c_str());
+        auto success = Firebase.RTDB.updateNode(&fbdo, "modelSensors/" + std::to_string(EspClass::getChipId()) +
+                                                     "/floors/"+std::to_string(ESP.getChipId())+"/modules/"+std::to_string(data.espData[i].serialId), data_);
         Serial_Printf("%s\n", success ? "OK" : fbdo.errorReason().c_str());
-    } else {
-        Serial_Printf("Failed to prepare data array.\n");
+        delete data_;
+
     }
-    delete dataArray;
 }
 
-FirebaseJsonArray *fireBase::prepareData(fireBaseData& data) {
-    auto* array = new FirebaseJsonArray;
-    for (auto& x : data.espData) {
 
-        FirebaseJson json;
+FirebaseJson * fireBase::prepareData(fireBaseData &data, int index) {
+    Serial_Printf("Preparing data start %d\n", index);
+    FirebaseJson *json = new FirebaseJson();
 
-        json.add("serialId", x.serialId);
-        json.add("Role", (int)x.role);
-        json.add("Status", "WORKING");
-        json.add("Charge", x.charge);
-
-        array->add(json);
-
-    }
-    String str;
-    array->toString(str, true /* prettify option */);
-    Serial.println("\n---------");
-    Serial.println(str);
-    return array;
+    json->add("serialId", data.espData[index].serialId);
+    json->add("Role", (int)data.espData[index].role);
+    json->add("Status", "WORKING");
+    json->add("Charge", data.espData[index].charge);
+    Serial_Printf("Preparing data end %d\n", index);
+    return json;
 }
 
 void fireBase::getUpdate() {

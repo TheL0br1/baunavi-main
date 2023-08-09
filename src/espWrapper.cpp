@@ -33,7 +33,7 @@ espWrapper::espWrapper(){
     WiFi.softAP(std::to_string(ESP.getChipId()).c_str());
     Serial.println(WiFi.macAddress());
     WiFi.macAddress(macAddr);
-    updateData(myData{serialId, getCharge()});
+    updateData(myData{serialId, getCharge(), MAIN});
 
 
 }
