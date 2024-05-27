@@ -1,0 +1,3075 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Z_DUMMY_TARGET"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_definitions",
+			"include",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"CMakeListsPrivate.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 34,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 27,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 35,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 36,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 28,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 30,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 32,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 41,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 42,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 38,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 45,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 46,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 44,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 39,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 29,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 25,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 40,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 43,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 33,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 31,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 49,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 50,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 51,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 52,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 53,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 54,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 55,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 56,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 57,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 58,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 59,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 60,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 61,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 62,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 63,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 64,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 65,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 66,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 67,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 68,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 69,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 70,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 71,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 72,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 73,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 74,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 75,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 76,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 77,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 78,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 79,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 80,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 81,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 82,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 83,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 84,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 85,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 86,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 87,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 88,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 89,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 90,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 91,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 92,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 94,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 95,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 96,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 97,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fno-rtti -std=gnu++17 -fno-exceptions -Os -mlongcalls -mtext-section-literals -falign-functions=4 -U__STRICT_ANSI__ -ffunction-sections -fdata-sections -Wall -Werror=return-type -free -fipa-pta -fdiagnostics-color=always"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "ARDUINO=10805"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "ARDUINO_ARCH_ESP8266"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "ARDUINO_BOARD=\"PLATFORMIO_NODEMCUV2\""
+				},
+				{
+					"backtrace" : 7,
+					"define" : "ARDUINO_BOARD_ID=\"nodemcuv2\""
+				},
+				{
+					"backtrace" : 8,
+					"define" : "ARDUINO_ESP8266_NODEMCU_ESP12E"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "ESP8266"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "FLASHMODE_DIO"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "F_CPU=80000000L"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "ICACHE_FLASH"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "LWIP_FEATURES=1"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "LWIP_IPV6=0"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "LWIP_OPEN_SRC"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "MMU_ICACHE_SIZE=0x4000"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "MMU_IRAM_HEAP"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "MMU_IRAM_SIZE=0xC000"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "NONOSDK22x_190703=1"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "PIO_FRAMEWORK_ARDUINO_MMU_CACHE16_IRAM48_SECHEAP_SHARED"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "PLATFORMIO=60106"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "TCP_MSS=536"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "VTABLES_IN_FLASH"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "__ets__"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 26,
+					"path" : "C:/Users/User/CLionProjects/baunavi-main/include"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/User/CLionProjects/baunavi-main/src"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/EEPROM"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "C:/Users/User/CLionProjects/baunavi-main/.pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_w5500/src"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_w5100/src"
+				},
+				{
+					"backtrace" : 32,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_enc28j60/src"
+				},
+				{
+					"backtrace" : 33,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFi/src"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/SD/src"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/SDFS/src"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266SdFat/src"
+				},
+				{
+					"backtrace" : 37,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/LittleFS/src"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/SPI"
+				},
+				{
+					"backtrace" : 39,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/tools/sdk/include"
+				},
+				{
+					"backtrace" : 40,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/cores/esp8266"
+				},
+				{
+					"backtrace" : 41,
+					"path" : "C:/Users/User/.platformio/packages/toolchain-xtensa/include"
+				},
+				{
+					"backtrace" : 42,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/tools/sdk/lwip2/include"
+				},
+				{
+					"backtrace" : 43,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/variants/nodemcu"
+				},
+				{
+					"backtrace" : 44,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ArduinoOTA"
+				},
+				{
+					"backtrace" : 45,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/DNSServer/src"
+				},
+				{
+					"backtrace" : 46,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266AVRISP/src"
+				},
+				{
+					"backtrace" : 47,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPClient/src"
+				},
+				{
+					"backtrace" : 48,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPUpdateServer/src"
+				},
+				{
+					"backtrace" : 49,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266LLMNR"
+				},
+				{
+					"backtrace" : 50,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266NetBIOS"
+				},
+				{
+					"backtrace" : 51,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266SSDP"
+				},
+				{
+					"backtrace" : 52,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WebServer/src"
+				},
+				{
+					"backtrace" : 53,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFiMesh/src"
+				},
+				{
+					"backtrace" : 54,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266httpUpdate/src"
+				},
+				{
+					"backtrace" : 55,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266mDNS/src"
+				},
+				{
+					"backtrace" : 56,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/Ethernet/src"
+				},
+				{
+					"backtrace" : 57,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/FSTools"
+				},
+				{
+					"backtrace" : 58,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/GDBStub/src"
+				},
+				{
+					"backtrace" : 59,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/Hash/src"
+				},
+				{
+					"backtrace" : 60,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/I2S/src"
+				},
+				{
+					"backtrace" : 61,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/Netdump/src"
+				},
+				{
+					"backtrace" : 62,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/SPISlave/src"
+				},
+				{
+					"backtrace" : 63,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/Servo/src"
+				},
+				{
+					"backtrace" : 64,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/SoftwareSerial/src"
+				},
+				{
+					"backtrace" : 65,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/TFT_Touch_Shield_V2"
+				},
+				{
+					"backtrace" : 66,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/Ticker/src"
+				},
+				{
+					"backtrace" : 67,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/Wire"
+				},
+				{
+					"backtrace" : 68,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/esp8266/src"
+				},
+				{
+					"backtrace" : 69,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_Ethernet/src"
+				},
+				{
+					"backtrace" : 70,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_PPP/src"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "C:/Users/User/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/10.3.0"
+				},
+				{
+					"backtrace" : 72,
+					"path" : "C:/Users/User/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/10.3.0/xtensa-lx106-elf"
+				},
+				{
+					"backtrace" : 73,
+					"path" : "C:/Users/User/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/10.3.0/include"
+				},
+				{
+					"backtrace" : 74,
+					"path" : "C:/Users/User/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/10.3.0/include-fixed"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "C:/Users/User/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				2,
+				4,
+				6,
+				137,
+				235,
+				237,
+				239,
+				241,
+				243,
+				245,
+				256,
+				258,
+				260,
+				262,
+				264,
+				266,
+				268,
+				270,
+				272,
+				274,
+				279,
+				281
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=gnu17 -Wpointer-arith -Wno-implicit-function-declaration -Wl,-EL -fno-inline-functions -nostdlib -Os -mlongcalls -mtext-section-literals -falign-functions=4 -U__STRICT_ANSI__ -ffunction-sections -fdata-sections -Wall -Werror=return-type -free -fipa-pta -fdiagnostics-color=always"
+				},
+				{
+					"fragment" : "-std=gnu17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "ARDUINO=10805"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "ARDUINO_ARCH_ESP8266"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "ARDUINO_BOARD=\"PLATFORMIO_NODEMCUV2\""
+				},
+				{
+					"backtrace" : 7,
+					"define" : "ARDUINO_BOARD_ID=\"nodemcuv2\""
+				},
+				{
+					"backtrace" : 8,
+					"define" : "ARDUINO_ESP8266_NODEMCU_ESP12E"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "ESP8266"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "FLASHMODE_DIO"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "F_CPU=80000000L"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "ICACHE_FLASH"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "LWIP_FEATURES=1"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "LWIP_IPV6=0"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "LWIP_OPEN_SRC"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "MMU_ICACHE_SIZE=0x4000"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "MMU_IRAM_HEAP"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "MMU_IRAM_SIZE=0xC000"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "NONOSDK22x_190703=1"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "PIO_FRAMEWORK_ARDUINO_MMU_CACHE16_IRAM48_SECHEAP_SHARED"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "PLATFORMIO=60106"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "TCP_MSS=536"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "VTABLES_IN_FLASH"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "__ets__"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 26,
+					"path" : "C:/Users/User/CLionProjects/baunavi-main/include"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/User/CLionProjects/baunavi-main/src"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/EEPROM"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "C:/Users/User/CLionProjects/baunavi-main/.pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_w5500/src"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_w5100/src"
+				},
+				{
+					"backtrace" : 32,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_enc28j60/src"
+				},
+				{
+					"backtrace" : 33,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFi/src"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/SD/src"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/SDFS/src"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266SdFat/src"
+				},
+				{
+					"backtrace" : 37,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/LittleFS/src"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/SPI"
+				},
+				{
+					"backtrace" : 39,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/tools/sdk/include"
+				},
+				{
+					"backtrace" : 40,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/cores/esp8266"
+				},
+				{
+					"backtrace" : 41,
+					"path" : "C:/Users/User/.platformio/packages/toolchain-xtensa/include"
+				},
+				{
+					"backtrace" : 42,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/tools/sdk/lwip2/include"
+				},
+				{
+					"backtrace" : 43,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/variants/nodemcu"
+				},
+				{
+					"backtrace" : 44,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ArduinoOTA"
+				},
+				{
+					"backtrace" : 45,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/DNSServer/src"
+				},
+				{
+					"backtrace" : 46,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266AVRISP/src"
+				},
+				{
+					"backtrace" : 47,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPClient/src"
+				},
+				{
+					"backtrace" : 48,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPUpdateServer/src"
+				},
+				{
+					"backtrace" : 49,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266LLMNR"
+				},
+				{
+					"backtrace" : 50,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266NetBIOS"
+				},
+				{
+					"backtrace" : 51,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266SSDP"
+				},
+				{
+					"backtrace" : 52,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WebServer/src"
+				},
+				{
+					"backtrace" : 53,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFiMesh/src"
+				},
+				{
+					"backtrace" : 54,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266httpUpdate/src"
+				},
+				{
+					"backtrace" : 55,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266mDNS/src"
+				},
+				{
+					"backtrace" : 56,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/Ethernet/src"
+				},
+				{
+					"backtrace" : 57,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/FSTools"
+				},
+				{
+					"backtrace" : 58,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/GDBStub/src"
+				},
+				{
+					"backtrace" : 59,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/Hash/src"
+				},
+				{
+					"backtrace" : 60,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/I2S/src"
+				},
+				{
+					"backtrace" : 61,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/Netdump/src"
+				},
+				{
+					"backtrace" : 62,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/SPISlave/src"
+				},
+				{
+					"backtrace" : 63,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/Servo/src"
+				},
+				{
+					"backtrace" : 64,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/SoftwareSerial/src"
+				},
+				{
+					"backtrace" : 65,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/TFT_Touch_Shield_V2"
+				},
+				{
+					"backtrace" : 66,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/Ticker/src"
+				},
+				{
+					"backtrace" : 67,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/Wire"
+				},
+				{
+					"backtrace" : 68,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/esp8266/src"
+				},
+				{
+					"backtrace" : 69,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_Ethernet/src"
+				},
+				{
+					"backtrace" : 70,
+					"path" : "C:/Users/User/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_PPP/src"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "C:/Users/User/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/10.3.0"
+				},
+				{
+					"backtrace" : 72,
+					"path" : "C:/Users/User/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/10.3.0/xtensa-lx106-elf"
+				},
+				{
+					"backtrace" : 73,
+					"path" : "C:/Users/User/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/10.3.0/include"
+				},
+				{
+					"backtrace" : 74,
+					"path" : "C:/Users/User/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/10.3.0/include-fixed"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "C:/Users/User/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				247,
+				251
+			]
+		}
+	],
+	"id" : "Z_DUMMY_TARGET::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-fno-rtti -std=gnu++17 -fno-exceptions -Os -mlongcalls -mtext-section-literals -falign-functions=4 -U__STRICT_ANSI__ -ffunction-sections -fdata-sections -Wall -Werror=return-type -free -fipa-pta",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "Z_DUMMY_TARGET",
+	"nameOnDisk" : "Z_DUMMY_TARGET",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				3,
+				5,
+				7,
+				33,
+				47,
+				133,
+				134,
+				135,
+				136,
+				138,
+				139,
+				140,
+				141,
+				142,
+				144,
+				147,
+				148,
+				149,
+				151,
+				152,
+				153,
+				184,
+				236,
+				238,
+				240,
+				242,
+				244,
+				246,
+				248,
+				249,
+				250,
+				252,
+				253,
+				254,
+				255,
+				257,
+				259,
+				261,
+				263,
+				265,
+				267,
+				269,
+				271,
+				273,
+				275,
+				276,
+				277,
+				278,
+				280,
+				282
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				2,
+				4,
+				6,
+				137,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				237,
+				239,
+				241,
+				243,
+				245,
+				247,
+				251,
+				256,
+				258,
+				260,
+				262,
+				264,
+				266,
+				268,
+				270,
+				272,
+				274,
+				279,
+				281
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				143,
+				145,
+				146,
+				150,
+				283
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "src/callbacks.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/constants.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/espWrapper.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/espWrapper.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/fireBase.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/fireBase.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/structures.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/.piopm",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/README.md",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/LegacyTokenAuthen/LegacyTokenAuthen.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/ReAuthenticate/ReAuthenticate.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/SignInAsAdmin/AccessTokenFile/AccessTokenFile.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/SignInAsAdmin/AccessTokenFile/data/gtsr1.der",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/SignInAsAdmin/AccessTokenFile/data/gtsr1.pem",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/SignInAsGuest/AnonymousSignin/AnonymousSignin.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/SignInAsUser/CustomToken/CustomToken.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/SignInAsUser/CustomTokenFile/CustomTokenFile.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/SignInAsUser/EmailPassword/EmailPassword.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/SignInWithAccessToken/SignInWithAccessToken.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/SignInWithCustomToken/SignInWithCustomToken.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/SignInWithIDToken/SignInWithIDToken.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/SignInWithRefreshAccessToken/SignInWithRefreshAccessToken.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/SignInWithRefreshIDToken/SignInWithRefreshIDToken.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/TestMode/TestMode.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/UserManagement/ResetPassword/ResetPassword.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/UserManagement/SendVerification/SendVerification.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Authentications/UserManagement/Signup/Signup.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/CloudFunctions/CallFunction/CallFunction.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/CloudFunctions/CreateFunction/CreateFunctionFromSources/CreateFunctionFromSources.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/CloudFunctions/CreateFunction/CreateFunctionWithCallback/CreateFunctionWithCallback.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/CloudFunctions/CreateFunction/CreateFunctionWithEventTrigger/CreateFunctionWithEventTrigger.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/CloudFunctions/CreateFunction/CreateFunctionWithReturnStatus/CreateFunctionWithReturnStatus.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/CloudFunctions/CreateFunction/DeployAutoZipFunction/AutoZip.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/CloudFunctions/CreateFunction/DeployAutoZipFunction/DeployAutoZipFunction.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/CloudFunctions/DeleteFunction/DeleteFunction.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/CloudFunctions/DownloadFunction/DownloadFunction.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/CloudFunctions/IAMPolicy/CreatePolicy/CreatePolicy.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/CloudFunctions/IAMPolicy/GetPolicy/GetPolicy.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/CloudFunctions/IAMPolicy/SetPolicy/SetPolicy.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/CloudFunctions/ListFunctions/ListFunctions.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/CloudFunctions/PatchFunction/PatchFunction.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/ExternalClient/RTDB/Ethernet/ESP32/Basic/Basic.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/ExternalClient/RTDB/Ethernet/ESP32/StreamCallback/StreamCallback.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/ExternalClient/RTDB/Ethernet/ESP8266/Basic/Basic.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/ExternalClient/RTDB/Ethernet/ESP8266/StreamCallback/StreamCallback.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/ExternalClient/RTDB/Ethernet/Others/Basic/Basic.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/ExternalClient/RTDB/Ethernet/Others/Basic/trust_anchors.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/ExternalClient/RTDB/Ethernet/Pico/Basic/Basic.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/ExternalClient/RTDB/Ethernet/Pico/StreamCallback/StreamCallback.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/ExternalClient/RTDB/WiFi/Basic/Basic.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/ExternalClient/RTDB/WiFi/StreamCallback/StreamCallback.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/FirebaseJson/BasicUsage/Create_Edit_Parse/Create_Edit_Parse.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/FirebaseJson/Client/ArduinoMQTT/ArduinoMQTT.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/FirebaseJson/Client/Firebase/Firebase.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/FirebaseJson/Client/WiFiClient/WiFiClient.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/FirebaseJson/Client/WiFiClientSecure/WiFiClientSecure.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/FirebaseJson/Stream/File/File.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/FirebaseJson/Stream/Serial/Serial.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/BatchGetDocuments/BatchGetDocuments.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/BatchWriteDocuments/BatchWriteDocuments.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/CommitDocument/AppendArray/AppendArray.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/CommitDocument/AppendMapValue/AppendMapValue.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/CommitDocument/AppendMapValueArray/AppendMapValueArray.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/CommitDocument/AppendMapValueTimestamp/AppendMapValueTimestamp.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/CommitDocument/IncrementFieldValue/IncrementFieldValue.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/CommitDocument/SetUpdateDelete/SetUpdateDelete.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/CreateDocuments/CreateDocuments.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/DataQuery/DataQuery.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/DeleteDocument/DeleteDocument.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/ExportDocuments/ExportDocuments.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/GetDocument/GetDocument.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/ImportDocuments/ImportDocuments.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/Indexes/CreateIndex/CreateIndex.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/Indexes/DeleteIndex/DeleteIndex.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/ListCollectionIds/ListCollectionIds.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/ListDocuments/ListDocuments.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/PatchDocument/AppendMapValue/AppendMapValue.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Firestore/PatchDocument/UpdateDocument/UpdateDocument.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Messaging/AppInstanceInfo/AppInstanceInfo.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Messaging/RegistAPNsTokens/RegistAPNsTokens.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Messaging/Send/HTTPv1/SendMessage/SendMessage.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Messaging/Send/HTTPv1/SendTopic/SendTopic.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Messaging/Send/LegacyAPI/BroadcastMessage/BroadcastMessage.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Messaging/Send/LegacyAPI/SendMessage/SendMessage.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Messaging/Send/LegacyAPI/SendMessageEthernet/ESP32/ESP32.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Messaging/Send/LegacyAPI/SendMessageEthernet/ESP8266/ESP8266.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Messaging/Send/LegacyAPI/SendTopic/SendTopic.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Messaging/SubscribeTopic/SubscribeTopic.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Messaging/UnsubscribeTopic/UnsubscribeTopic.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/README.md",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/BackupRestore/Flash/Flash.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/BackupRestore/SD/SD.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/Basic/Basic.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/BasicCert/BasicCert.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/BasicCert/data/gtsr1.der",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/BasicCert/data/gtsr1.pem",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/BasicEthernet/ESP32/ESP32.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/BasicEthernet/ESP8266/ESP8266.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/Blob/Blob.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/Blynk/Blynk.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/DataChangesListener/Callback/Callback.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/DataChangesListener/MultiPath/MultiPath.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/DataChangesListener/NoCallback/NoCallback.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/DataChangesListener/SingleDataObject/SingleDataObject.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/DataFilter/DataFilter.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/DataRetaining/DataRetaining.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/DatabaseRules/DatabaseRules.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/DownloadFileOTA/DownloadFileOTA.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/ETag/ETag.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/FastSend/FastSend.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/File/Flash/Flash.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/File/SD/SD.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/Priority/Priority.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/Queue/Queue.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/ShallowedData/ShallowedData.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/RTDB/Timestamp/Timestamp.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Storage/FirebaseStorage/DeleteFile/DeleteFile.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Storage/FirebaseStorage/DownloadFile/DownloadFile.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Storage/FirebaseStorage/DownloadFileOTA/DownloadFileOTA.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Storage/FirebaseStorage/ListFiles/ListFiles.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Storage/FirebaseStorage/Metadata/Metadata.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Storage/FirebaseStorage/UploadByteArrayMemory/UploadByteArrayMemory.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Storage/FirebaseStorage/UploadFile/UploadFile.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Storage/GoogleCloudStorage/DeleteFile/DeleteFile.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Storage/GoogleCloudStorage/DownloadFile/DownloadFile.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Storage/GoogleCloudStorage/DownloadFileOTA/DownloadFileOTA.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Storage/GoogleCloudStorage/ListFiles/ListFiles.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Storage/GoogleCloudStorage/Metadata/Metadata.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/examples/Storage/GoogleCloudStorage/UploadFile/UploadFile.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/keywords.txt",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/library.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/library.properties",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/FB_Const.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/FB_Error.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/FB_Network.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/FB_Utils.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/Firebase.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/Firebase.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/FirebaseFS.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/Firebase_Client_Version.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/Firebase_ESP_Client.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/MB_NTP.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/README.md",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/addons/FireSense/FireSense.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/addons/FireSense/README.md",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/addons/FireSense/library.properties",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/addons/RTDBHelper.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/addons/SDHelper.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/addons/TokenHelper.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/LICENSE.txt",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/bool_types.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/config.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/esp_suspend.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i15_bitlen.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i15_decred.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i15_fmont.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i15_iszero.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i15_moddiv.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i15_modpow2.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i15_mulacc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i15_ninv15.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i15_reduce.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i15_rshift.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_add.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_bitlen.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_decmod.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_decode.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_decred.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_encode.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_fmont.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_iszero.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_moddiv.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_modpow.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_modpow2.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_montmul.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_mulacc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_muladd.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_ninv31.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_reduce.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_rshift.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_sub.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i31_tmont.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/i32_div32.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/inner.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_default_keygen.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_default_modulus.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_default_oaep_decrypt.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_default_oaep_encrypt.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_default_pkcs1_sign.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_default_pkcs1_vrfy.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_default_priv.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_default_privexp.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_default_pub.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_default_pubexp.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i15_keygen.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i15_modulus.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i15_oaep_decrypt.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i15_oaep_encrypt.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i15_pkcs1_sign.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i15_pkcs1_vrfy.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i15_priv.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i15_privexp.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i15_pub.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i15_pubexp.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i31_keygen.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i31_keygen_inner.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i31_modulus.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i31_oaep_decrypt.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i31_oaep_encrypt.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i31_pkcs1_sign.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i31_pkcs1_vrfy.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i31_priv.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i31_privexp.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i31_pub.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i31_pubexp.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i32_oaep_decrypt.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i32_oaep_encrypt.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i32_pkcs1_sign.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i32_pkcs1_vrfy.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i32_priv.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i32_pub.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i62_keygen.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i62_oaep_decrypt.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i62_oaep_encrypt.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i62_pkcs1_sign.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i62_pkcs1_vrfy.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i62_priv.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_i62_pub.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_oaep_pad.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_oaep_unpad.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_pkcs1_sig_pad.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_pkcs1_sig_unpad.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/rsa_ssl_decrypt.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/bearssl/settings.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/firestore/FB_Firestore.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/firestore/FB_Firestore.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/functions/FB_Functions.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/functions/FB_Functions.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/functions/FunctionsConfig.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/functions/FunctionsConfig.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/functions/PocicyBuilder.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/functions/PolicyBuilder.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/gcs/GCS.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/gcs/GCS.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/json/FirebaseJson.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/json/FirebaseJson.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/json/MB_JSON/MB_JSON.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/json/MB_JSON/MB_JSON.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/json/MB_List.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/json/MB_String.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/json/extras/print/fb_json_print.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/json/extras/print/fb_json_print.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/mbfs/MB_FS.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/mbfs/MB_FS_Interfaces.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/mbfs/MB_MCU.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/message/FCM.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/message/FCM.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/rtdb/FB_RTDB.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/rtdb/FB_RTDB.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/rtdb/QueryFilter.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/rtdb/QueryFilter.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/rtdb/QueueInfo.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/rtdb/QueueInfo.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/rtdb/QueueManager.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/rtdb/QueueManager.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/rtdb/stream/FB_MP_Stream.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/rtdb/stream/FB_MP_Stream.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/rtdb/stream/FB_Stream.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/rtdb/stream/FB_Stream.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/session/FB_Session.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/session/FB_Session.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/signer/Signer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/signer/Signer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/storage/FCS.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/storage/FCS.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/wcs/FB_Clients.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/wcs/base/FB_TCP_Client_Base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/wcs/custom/FB_Custom_TCP_Client.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/wcs/esp32/FB_TCP_Client.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/wcs/esp32/FB_TCP_Client.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/wcs/esp8266/FB_TCP_Client.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/Firebase Arduino Client Library for ESP8266 and ESP32/src/wcs/esp8266/FB_TCP_Client.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".pio/libdeps/nodemcuv2/integrity.dat",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "EXECUTABLE"
+}
